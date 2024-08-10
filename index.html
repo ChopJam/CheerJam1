@@ -6,17 +6,12 @@
     <script src="https://chopjam.github.io/CheerJam1/CheerPx/pp.js"></script>
     <script>
       window.onload = (event) => {
-        ppInit().then(() => {
-          ppAPI.loadSWF("https://cors-anywhere.herokuapp.com/https://chopjam.github.io/CheerJam1/KramerDance.swf", {
-            width: 700,
-            height: 700,
-            container: document.getElementById('flash-container')
-          });
-        });
+        ppInit();
       };
     </script>
   </head>
+
   <body>
-    <div id="flash-container"></div>
+    <embed src="https://chopjam.github.io/CheerJam1/KramerDance.swf" width="700" height="700" />
   </body>
 </html>
